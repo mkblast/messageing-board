@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    form(action="/new" method="POST")
+        div
+            label Username:
+                input(type="text" placeholder="Username" name="username")
+        div
+            label Message:
+                input(type="text" placeholder="Message" name="message")
+        div
+            button(type="submit") submit
